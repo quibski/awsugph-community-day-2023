@@ -1,0 +1,26 @@
+[ 
+  {
+    "agenda": "LIGHTNING TALKS",
+    "speaker": "LIGHTNING TALKS"
+  },
+  {
+    "agenda": "Amazon EventBridge integrations with SaaS product events",
+    "speaker": "Jones Zachariah, Noel (Bengaluru, India)"
+  },
+  {
+    "agenda": "Developing End-to-End Serverless Applications",
+    "speaker": "DONNIE"
+  },
+  {
+    "agenda": "Building Serverless Flutter Apps with AWS Amplify",
+    "speaker": "Joshua, de Guzman"
+  },
+  {
+    "agenda": "Building a WordPress Site on AWS Using Composer and Terraform",
+    "speaker": "Carl, Alberto"
+  },
+  {
+    "agenda": "AWS FOR QA TESTING",
+    "speaker": "JAIRA"
+  }
+]
