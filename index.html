@@ -802,20 +802,20 @@
                     </h4>
                     <div class="left_in f1">
                         <div id="map">
-                            <iframe
+                            <iframe id="map1x"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6985.18622473681!2d121.04979564083408!3d14.54959425553231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8f361334217%3A0x3019809702d84636!2sMarquis%20Events%20Place!5e0!3m2!1sen!2sph!4v1680175353411!5m2!1sen!2sph"
-                                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                 style="border:0; width:100%; height:100%; min-width:320px;  max-width:600; max-height:600px;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <iframe
+                            <iframe id="map2x"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1722.2371312129267!2d121.0471920450505!3d14.55188143049644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c92aff89feb9%3A0x95294b632b7e770e!2sArthaland%20Century%20Pacific%20Tower!5e0!3m2!1sen!2sph!4v1680175497764!5m2!1sen!2sph"
-                                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                 style="border:0; width:100%;height:100%; min-width:320px;  max-width:600; max-height:600px; display: none;;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="right f1">
                     <div class="right_in">
-                        <div class="ven-1 ven active" data-lat="14.553307" data-lng="121.0529559"
+                        <div class="ven-1 ven active" data-lat="14.553307" data-lng="121.0529559" onclick="$('#map1x').show();$('#map2x').hide();"
                             data-label="Marquis Building">
                             <div class="rand_cls">
                                 <span class="date_ori">July 29</span>
@@ -828,7 +828,7 @@
                                 <li>Philippines 1634</li>
                             </ul>
                         </div>
-                        <div class="ven-2 ven" data-lat="14.5521689" data-lng="121.0468432"
+                        <div class="ven-2 ven" data-lat="14.5521689" data-lng="121.0468432"  onclick="$('#map2x').show();$('#map1x').hide();"
                             data-label="AWS Philippines Office">
                             <div class="rand_cls">
                                 <span class="date_ori">July 29 & 30</span>
