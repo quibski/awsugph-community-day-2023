@@ -2654,7 +2654,7 @@ ul.circle li {
   }
   /* line 1216, ../sass/shared/_home.scss */
   #page .section-tickets .row > div {
-    width: calc(50% - 15px / 2);
+    /* width: calc(50% - 15px / 2); */
     margin-bottom: 15px;
     padding: 0;
   }
