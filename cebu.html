@@ -408,9 +408,14 @@
                     </h4>
                     <div class="left_in f1">
                         <div id="map">
-                            <iframe 
+                            <iframe id="map1x"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125585.22068163013!2d123.84629469999999!3d10.37876445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x4c34030cdbd33507!2sCebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1689176571741!5m2!1sen!2sph"
                             style="border:0; width:100%; height:100%; min-width:320px;  max-width:600; max-height:600px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            <iframe id="map2x"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125585.22068163013!2d123.84629469999999!3d10.37876445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x4c34030cdbd33507!2sCebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1689176571741!5m2!1sen!2sph"
+                            style="border:0; width:100%; height:100%; min-width:320px;  max-width:600; max-height:600px; display: none;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         </div>
@@ -418,10 +423,23 @@
                 </div>
                 <div class="right f1">
                     <div class="right_in">
-                        <div class="ven-1 ven active"  data-lat="14.553307" data-lng="121.0529559"   data-label=" Building">
+                        <div class="ven-1 ven active"  data-lat="14.553307" data-lng="121.0529559"  onclick="$('#map1x').show();$('#map2x').hide();"   data-label=" Building">
                             <div class="rand_cls">
                                 <span class="date_ori">August 26</span>
                                 <h4 class="headin-ttl">Conference</h4>
+                            </div>
+                            <ul>
+                                <li><b>TBA</b></li>
+                                <li> - </li>
+                                <li>Cebu, Cebu</li>
+                                <li>Philippines 600</li>
+                            </ul>
+                        </div>
+                        <div class="ven-2 ven" data-lat="14.5521689" data-lng="121.0468432"  onclick="$('#map2x').show();$('#map1x').hide();"
+                            data-label="Dinner">
+                            <div class="rand_cls">
+                                <span class="date_ori">August 26</span>
+                                <h4 class="headin-ttl">Dinner</h4>
                             </div>
                             <ul>
                                 <li><b>TBA</b></li>
@@ -870,11 +888,7 @@
                             </div>
 
 
-                            <div class="person" data-fname="Raphael" data-lname="Jambalos">
-                                <div class="img">
-                                    <img src="images/vols/jamby.jpeg" />
-                                </div>
-                            </div>
+                            
 
                             <div class="person" data-fname="Monique" data-lname="Ong">
                                 <div class="img">
@@ -882,11 +896,13 @@
                                 </div>
                             </div>
 
-                            <div class="person" data-fname="Anthony" data-lname="Basang">
+                            <div class="person" data-fname="BJ" data-lname="Ato">
                                 <div class="img">
-                                    <img src="images/vols/anthony.png" />
+                                    <img src="images/vols/bjnato.jpeg" />
                                 </div>
                             </div>
+
+                          
 
 
                         </div>
