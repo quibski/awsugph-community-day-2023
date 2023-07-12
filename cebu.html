@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AWS Community Day Philippines - Roadshow Cebu 2023</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="images/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:url" content="https://communityday.awsug.ph" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AWS Community Day Philippines  - Roadshow Cebu 2023" />
+    <meta property="og:description"
+        content="AWS User Group Philippines (AWSUG.PH) is celebrating its 10th Year with a bang by hosting the most awaited AWS Community Day Philippines 2023. Join us as we share success stories, use cases from industry leaders, and many more AWSomeness." />
+    <meta property="og:image" content="https://community.awsug.ph/2023/images/community-day-logo-sq.png" />
+    <meta property="og:image:secure_url" content="https://community.awsug.ph/2023/images/community-day-logo-sq.png" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@AWSUGPH">
+    <meta name="twitter:creator" content="@YoungCTO">
+    <meta name="twitter:title" content="AWS Community Day Philippines 2023s">
+    <meta name="twitter:description"
+        content="AWS User Group Philippines (AWSUG.PH) is celebrating its 10th Year with a bang by hosting the most awaited AWS Community Day Philippines 2023.">
+    <meta name="twitter:image" content="https://community.awsug.ph/2023/images/community-day-logo-sq.png">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/site.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css?v=20230623" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyles.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-XXXXXXXXXX-1");
+    </script>
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=636bcd11bdc1a20013080618&product=inline-share-buttons&source=platform"
+        async="async"></script>
+    <!--script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5b63095a78eb8b00113e362f&product=inline-share-buttons"></script-->
+    <link rel="manifest" href="/manifest.json" />
+
+
+    <!-- script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "b3f01cfa-1a70-4f46-9dd1-202a1ae14385",
+      });
+    });
+  </script-->
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1112628635595414');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1112628635595414&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <div id="page">
+        <div class="section section-1 hdr" id="home">
+            <div class="content">
+                <div class="container">
+                    <div>
+                        <div wid="50%" class="left">
+                            <div class="left_in">
+                                <img src="images/community-day-logo-cebu.png" />
+                                <center><iframe
+                                        src="https://free.timeanddate.com/countdown/i8uiwg64/n145/cf12/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fs100/szw576/szh243/iso2023-08-26T09:00:00"
+                                        allowtransparency="true" frameborder="0" width="197" height="52"></iframe>
+                                </center><br /><br />
+                                <div class="txt">
+                                    <h4 class="headin-ttl">
+                                        August 26, 2023 Cebu, Cebu*
+                                    </h4>
+                                    <p>
+                                        AWS User Group Philippines (AWSUG.PH) is celebrating its 10th Year with a bang
+                                        by hosting the most
+                                        awaited AWS Community Day Philippines - Roadshow Cebu 2023. Join us as we share success stories,
+                                        use cases from
+                                        industry leaders, and many more AWSomeness.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div wid="50%" class="right">
+                            <div class="gal flex-it col">
+                                <div class="top f1 flex-it">
+                                    <div class="f2 ims im1"></div>
+                                    <div class="f1 ims im2"></div>
+                                </div>
+                                <div class="bot f1 flex-it">
+                                    <div class="f1 ims im3"></div>
+                                    <div class="f2 flex-it col">
+                                        <div class="f1 flex-it">
+                                            <div class="f1 ims im4"></div>
+                                            <div class="f1 ims im5"></div>
+                                        </div>
+                                        <div class="f1 ims im6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right_in">
+                                <p class="AWSUGPH_logo">
+                                    <img src="./images/AWSUGPH_logo.png" />
+                                </p>
+                                <!--p class="enlarge">
+                  Thanks ❤️ everyone for making last Community Day 🎈 a huge
+                  success
+                </p>
+                <button class="white icon-grp rt" id="link">
+                  EXPLORE 2018
+                  <i class="icon large ion-md-play-circle"></i>
+                </button -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-bar">
+                <p id="toggle"><span></span></p>
+                <li class="spec">
+                    <a class="buy-ticket-link  button" href="#tickets">Tickets</a>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#com_info">About Community Day</a>
+                    </li>
+                    <li>
+                        <a href="#cfp">CFP</a>
+                    </li>
+                    <li>
+                        <a href="#venues">Venues</a>
+                    </li>
+                    <!--li>
+            <a href="#agenda">Agenda</a>
+          </li-->
+                    <li>
+                        <a href="#agenda">Agenda</a>
+                    </li>
+
+
+                    <!--li>
+            <a href="#workshop">Workshop</a>
+          </li-->
+                    <li>
+                        <a href="#sponsors">Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="#speakers">Speakers</a>
+                    </li>
+                    <li>
+                        <a href="#volunteers">Volunteers</a>
+                    </li>
+
+                    <li>
+                        <a href="#subscribe" id="sub-button" class="sub-button">
+                            <i class="icon large ion-md-notifications-outline"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section section-2">
+            <div class="container flex-it">
+                <div class="f1 left" id="com_info">
+                    <div class="left_in">
+                        <h4 class="headin-ttl">
+                            WHO ARE WE?
+                        </h4>
+                        <p>
+                            <b><a href="https://meetup.com/AWSUG.PH" target="_blank">AWS User Group Philippines
+                                    (AWSUG.PH)</a></b>
+
+                            is a Philippine-based community united by its members' passion for Amazon Web Services and
+                            its related
+                            tools and technologies, including cloud computing, design implementation and servicing, high
+                            scalability,
+                            performance computing, production use cases, blockchain, Artificial Intelligence, and much
+                            more.
+
+
+
+                        </p>
+                        <p>
+                            AWS Community Days are community-organized cloud education events that feature technical
+                            discussions and
+                            demos by expert AWS users and industry leaders from around the world.
+                        </p>
+                        <p>
+                            Community-based learning is the best venue for enthusiasts to connect, explore and discuss
+                            the concepts by
+                            sharing first-hand experiences and familiar, applicable solutions.
+                        </p>
+                        <p>
+                            Everyone is welcome to learn, share, and network!
+                        </p>
+                        <p>
+                            <center>
+                                <a href="https://www.meetup.com/AWS-User-Group-Philippines/" target="_blank">
+                                    <i class="fa fa-meetup" aria-hidden="true" style="font-size:250%;"></i> </a>&nbsp;
+
+
+                                <a href="https://www.facebook.com/groups/AWSUGPH/" target="_blank">
+                                    <i class="fa fa-facebook" aria-hidden="true"
+                                        style="color:orange;font-size:250%;"></i> </a>&nbsp;
+
+
+                                <a href="https://www.linkedin.com/company/aws-user-group-philippines/" target="_blank">
+                                    <i class="fa fa-linkedin" aria-hidden="true" style="font-size:250%"></i> </a>&nbsp;
+
+                                <a href="https://www.youtube.com/c/YoungCTO" target="_blank">
+                                    <i class="fa fa-youtube" aria-hidden="true" style="color:orange;font-size:250%"></i>
+                                </a>&nbsp;
+
+                            </center>
+                        </p>
+                    </div>
+                </div>
+                <div class="f1 right" id="even_info">
+                    <div class="right_in">
+                        <h4 class="heading-ttl">
+                            What to expect from AWS Community Day - Roadshow?
+                        </h4>
+                        <ul class="circle">
+                            <li>
+
+                                Discover and share how AWS changes lives.
+                            </li>
+                            <li>
+                                Know more about industry trends, nuances, and innovations.
+
+                            </li>
+                            <li>
+                                Connect with 100+ AWS users, DevOps, developers, and solutions architects.
+                            </li>
+                            <li>
+                                Network with fellow AWS enthusiasts.
+                            </li>
+                            <li>
+                                Renew your excitement about the important work that you do.
+                            </li>
+                            <li>
+                                Gain more visibility and publicity for your organization.
+                            </li>
+                            <li>
+                                Learn and bring valuable information for your business growth.
+                            </li>
+                            <li>
+                                Win AWS goodies!
+                            </li>
+                        </ul>
+                    </div>
+                    <br /><b>Please read the
+                        <a href="./code-of-conduct.html" target="_blank">Code of Conduct</a>
+                        for this event.</b>
+                </div>
+            </div>
+        </div>
+        <div class="section section-tickets text-center" id="tickets">
+            <div class="container">
+                <h4 class="main-heading-ttl text-center">Get Tickets </h4>
+                <!--h3 class="text-center">(Early Bird 50% Available Now)</h3-->
+                <br /><b>Please read the
+                    <a href="./payments.html" target="_blank">Payment Method</a>
+                    for this event.</b>
+                <div class="row flex-it">
+
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="card tick_conf with_icon border" notclass="sold">
+                            <h4 class="heading-ttl">PISO/FREE PASS</h4>
+                            <div class="bg_img"></div>
+                            <p>General Conference: Gives you access to the conference
+                            </p><br />
+                            <p>Sticker Pack, Raffle Entry, Snacks</p>
+                            <small>*No Networking Events outside</small>
+
+                            <p></p>
+                            <div class="buy-wrapper row flex-it">
+                                <div class="f1">
+                                    <a class="button large buy-ticket-link"
+                                        href="#">PISO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12  col-sm-12">
+                        <div class="card tick_work_1 with_icon border" notclass="sold">
+                            <h4 class="heading-ttl">REGULAR</h4>
+                            <div class="bg_img"></div>
+                            <p>General Conference: Gives you access to the conference</p><br />
+                            <p> Sticker Pack & Shirt Swag Kit, Raffle Entry; Snacks;</p>
+                            <small></small>
+                            <p></p>
+                            <div class="buy-wrapper row flex-it">
+                                <div class="f1">
+                                    <a class="button large buy-ticket-link"
+                                        href="#">Php350.00</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--div class="col-md-12  col-sm-12">
+                        <div class="card tick_work_3 with_icon border dark sold" notclass="sold">
+                            <h4 class="heading-ttl">Professional </h4>
+                            <div class="bg_img"></div>
+                            <p>General Conference, Expo, Networking & Workshops on Day 1 & Day 2</p><br />
+                            <p>Served with 5-Star Buffet Meal, Morning Snacks, Sticker Pack & Regular Swag Kit, Raffle
+                                Entry</p>
+                            <p></p>
+                            <div class="buy-wrapper row flex-it">
+                                <div class="f1">
+                                    <a class="button large buy-ticket-link"
+                                        href="https://forms.zohopublic.com/awsugph/form/RegisterCommunityDayPhilippines2023/formperma/6iqavjBPn8nnwA4lW3tQ6qUMIc4lnBvptO8UIpJCbuE?ticket_type=Professional">Php1,500.00</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div-->
+
+
+                    <div class="col-md-12  col-sm-12">
+                        <div class="card tick_work_2 with_icon border" notclass="sold">
+                            <h4 class="heading-ttl">VIP PASS </h4>
+                            <div class="bg_img"></div>
+                            <p>General Conference: Gives you access to the conference & Networking Dinner</p><br />
+                            <p> Sticker Pack & VIP Swag Kit, Raffle Entry; Snacks;</p>
+                            </p>
+                            <div class="buy-wrapper row flex-it">
+                                <div class="f1">
+                                    <a class="button large buy-ticket-link"
+                                        href="#">Php850.00</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--div class="col-md-3 ">
+            <div class="card tick_work_1 with_icon border dark " notclass="sold">
+              <h4 class="heading-ttl">Online Pass</h4>
+              <div class="bg_img"></div>
+              <p></p>
+            </div>
+          </div-->
+                </div>
+
+                <!--div class="buy-wrapper row flex-it">
+          <div class="f1">
+            <a class="button large buy-ticket-link" target="_blank" href="https://go.awsug.ph/interest-community-day-2023">Register Interest</a>
+          </div>
+        </div-->
+
+
+            </div>
+        </div>
+        <!-- Modals-->
+        
+        
+
+        <div class="section section-3 inv " id="venues">
+            <div class="container flex-it">
+                <div class="left f1 flex-it">
+                    <h4 class="headin-ttl">
+                        Venues
+                    </h4>
+                    <div class="left_in f1">
+                        <div id="map">
+                            <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125585.22068163013!2d123.84629469999999!3d10.37876445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258dcd2dfd%3A0x4c34030cdbd33507!2sCebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1689176571741!5m2!1sen!2sph"
+                            style="border:0; width:100%; height:100%; min-width:320px;  max-width:600; max-height:600px;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="right f1">
+                    <div class="right_in">
+                        <div class="ven-1 ven active"  data-lat="14.553307" data-lng="121.0529559"   data-label=" Building">
+                            <div class="rand_cls">
+                                <span class="date_ori">August 26</span>
+                                <h4 class="headin-ttl">Conference</h4>
+                            </div>
+                            <ul>
+                                <li><b>TBA</b></li>
+                                <li> - </li>
+                                <li>Cebu, Cebu</li>
+                                <li>Philippines 600</li>
+                            </ul>
+                        </div>
+                       
+
+                        <div class="marked"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section section-4 inv" id="agenda">
+            <div class="container">
+                <div class="agenda">
+
+
+                    <h4 class="main-heading-ttl text-center white" style="color:white">Potential Agenda & Tracks</h4>
+                    <div class="text-center agenda">
+                        <div class="table">
+                            <div class="thead">
+                                <div class="tr">
+                                    <div class="th idx">
+                                        <div>
+                                            <p>Time</p>
+                                        </div>
+                                    </div>
+                                    <div class="th" colspan="3">
+                                        <div>
+                                            <p>Room</p>
+                                        </div>
+                                    </div>
+                                    
+                                  
+
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                
+                                <div class="tr gap">
+                                    <div class="td idx">
+                                        <div>
+                                            <p>Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="td" colspan="3">
+                                        <div>
+                                            <p>July 29, 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                    
+
+                                <div class="tr">
+                                    <div class="td idx">
+                                        <div>
+                                            <p>Morning</p>
+                                        </div>
+                                    </div>
+                                    <div class="td" colspan="3"> <div>Workshop</div></div>
+                                   
+                                    
+                                </div>
+
+                                <div class="tr">
+                                    <div class="td idx">
+                                        <div>
+                                            <p>Afternoon</p>
+                                        </div>
+                                    </div>
+                                    <div class="td" colspan="3" >
+                                        <div> <p>
+                                        State of Tech Communities <br /> 
+                                        Careers in AWS Skillsets <br /> 
+                                        ML/AI Application <br />
+                                        Security for Cloud <br />
+                                        </p></div>
+                                    </div>
+                                    
+
+
+
+                                </div>
+
+                                <div class="tr">
+                                    <div class="td idx">
+                                        <div>
+                                            <p>Evening</p>
+                                        </div>
+                                    </div>
+                                    <div class="td" colspan="3">
+                                        <div>
+                                            <p>Networking Dinner</p>
+                                        </div>
+                                    </div>
+                                 
+                                </div>
+
+
+
+
+                                
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="buy-wrapper row flex-it">
+                            <div class="f1">
+                                <a class="button large buy-ticket-link" target="_blank" href="#tickets">Register
+                                    Interest</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section-8" id="speakers">
+            <div class="container">
+                <div class="speakers">
+                    <h4 class="main-heading-ttl text-center">Speakers</h4>
+                    <div class="spk_lst flex-it ">
+                        <div class="spk_itm_col">
+
+
+
+
+
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img src="images/speakers/joshua_lat.jpg" alt=""></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Joshua Arvin Lat</b>
+                                        <br>
+                                        <small>CTO, NuWorks </small>
+                                        <br>
+                                        <small>AWS Machine Leaning Hero</small>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img src="images/speakers/raphael_quisumbing.jpg" alt=""></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Raphael Quisumbing</b>
+                                        <br>
+                                        <small>Head of Product, MediaTrack.org</small>
+                                        <br>
+                                        <small>AWS Community Hero</small>
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <!--div class="spk_itm flex-it">
+                                <div class="prod_im"><img src="images/speakers/raphael_jambalos.jpg" alt=""></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Raphael Jambalos</b>
+                                        <br>
+                                        <small>Cloud Native Manager, EcloudValley</small>
+                                        <br>
+                                        <small>AWS APN Ambassador</small>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img src="images/speakers/jen_arroyo.jpeg" alt=""></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Jen Arroyo</b>
+                                        <br>
+                                        <small>Technical Trainer, EcloudValley</small>
+                                        <br>
+                                        <small>AWS Authorized Trainer</small>
+                                    </p>
+                                </div>
+                            </div-->
+
+
+
+                            <div class="spk_itm flex-it">
+                                <div class="prod_im"><img
+                                        src="images/speakers/communitee/Neriah BJ Ato - Lead Organizer - PizzaPy Cebu.jpeg"
+                                        alt=""></div>
+                                <div class="namenid">
+                                    <p>
+                                        <b>Neriah BJ Ato</b>
+                                        <br>
+                                        <small>Lead Organizer - PizzaPy Cebu</small>
+
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="section section-5" id="sponsors">
+
+            <div class="container">
+                <div class="sponsors">
+                    <h4 class="main-heading-ttl text-center">Our Esteemed Sponsors</h4>
+                    <div class="cats">
+                        <div class="pltnm">
+                            <div class="flex-it">
+                                <div class="fhf">
+                                    <div class="head"><span>Platinum</span></div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/Packetworx.png);">
+                                        <a href="https://packetworx.com/" target="_blank">Packetworx</a>
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="gld">
+                            <div class="flex-it">
+                                <div class="fhf">
+                                    <div class="head"><span>Gold</span></div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/Accenture.png);">
+                                        <a href="https://www.accenture.com/ph-en" target="_blank">Accenture</a>
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/fulcrum.jpg);">
+                                        <a href="https://nyfulcrum.com/" target="_blank">Fulcrum</a>
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/OpsWerks.png);">
+                                        <a href="https://opswerks.com/" target="_blank">OpsWerks</a>
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/Stratpoint\ Blue.png);">
+                                        <a href="https://stratpoint.com/" target="_blank">Stratpoint</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slvr">
+                            <div class="flex-it">
+                                <div class="fhf">
+                                    <div class="head"><span>Silver</span></div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/apper.png);">
+                                        <a href="https://www.apper.ph/" target="_blank">Apper.PH</a>
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/ecloud-mongo.jpeg);">
+                                        <a href="https://www.ecloudvalley.com/en" target="_blank">EcloudValley | MongoDB</a>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="media" style="display:none">
+                            <div class="flex-it">
+                                <div class="fhf">
+                                    <div class="head"><span>Media</span></div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div class="open">
+                                        <!--a href="https://developer.amazon.com/alexa" target="_blank">Alexa</a-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="cmnty">
+                            <div class="flex-it">
+                                <div class="fhf">
+                                    <div class="head"><span>Community</span></div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/community/wordpressph.jpg);">
+                                        <a href="https://www.facebook.com/groups/WPUGPH/" target="_blank">WordPress
+                                            Philippines</a>
+
+                                    </div>
+                                </div>
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/community/DEVCON\ logo.png);">
+                                        <a href="https://devcon.ph/" target="_blank">DEVCON</a>
+                                    </div>
+                                </div>
+
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/community/PizzaPy\ Logo.png);">
+                                        <a href="https://www.facebook.com/groups/pizzapy.ph/" target="_blank">PizzaPy
+                                            Cebu</a>
+                                    </div>
+                                </div>
+
+                                <div class="f1">
+                                    <div style="background-image: url(images/spons/community/PWA\ Logo.png);">
+                                        <a href="https://www.facebook.com/PWAPilipinas/" target="_blank">PWA
+                                            Philippines</a>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section section-talk text-center" id="cfp">
+            <div class="container">
+                <img src="images/cfp.jpg" style="max-width:300px;max-height:300px">
+                <div class="cfp">
+                    <h4 class="main-heading-ttl">Submit a talk</h4>
+                    <h4>Please submit using this <a target="_new" href="https://go.awsug.ph/cfp-comday-2023">FORM</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-6 inv" id="volunteers">
+            <div class="container">
+                <div class="volunteers">
+                    <h4 class="main-heading-ttl text-center">Volunteers</h4>
+                    <div class="vl-row-list">
+                        <div class="vl-i  flex-it hcenter">
+                            <div class="person" data-fname="Raphael" data-lname="Quisumbing">
+                                <div class="img">
+                                    <img src="images/vols/rafi.jpg" />
+                                    <a target="_blank" href="https://www.youtube.com/c/YoungCTO">
+                                        <i class="icon large ion-logo-youtube"></i></a>
+                                </div>
+                            </div>
+
+
+                            <div class="person" data-fname="Raphael" data-lname="Jambalos">
+                                <div class="img">
+                                    <img src="images/vols/jamby.jpeg" />
+                                </div>
+                            </div>
+
+                            <div class="person" data-fname="Monique" data-lname="Ong">
+                                <div class="img">
+                                    <img src="images/vols/monique.jpeg" />
+                                </div>
+                            </div>
+
+                            <div class="person" data-fname="Anthony" data-lname="Basang">
+                                <div class="img">
+                                    <img src="images/vols/anthony.png" />
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-7" id="subscribe">
+            <div class="container">
+                <div class="sponsors">
+                    <div class="foot-fk">
+                        <h4 class="main-heading-ttl">SHARE YOUR INTEREST</h4>
+                        <div class="row flex-it vcenter">
+                            <div class="col-md-12">
+                                <!-- sharing buttons -->
+                                <div class="sharethis-inline-share-buttons"></div>
+                            </div>
+                        </div>
+                        <p class="text-center hide">
+                            <small>Please do read the Code of Conduct for this event.</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                        msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                        webkitallowfullscreen="webkitallowfullscreen"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- getting utm parameter and passing to konfhub start -->
+</body>
+<!-- temporary -->
+
+</html>
