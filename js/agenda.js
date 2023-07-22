@@ -1,42 +1,41 @@
 var morningBigRoomItems = [
   "Welcome Remarks",
-  "Making data center and cloud operation teams thrive",
-  "AI / ML",
-  "TECH COMMUNITIES",
-  "Containers on AWS",
-  "Building on a Budget the AWS Well-Architected way",
-  "Making Lives Better Through The Power Of Platform",
+  "Securing AI & ML Systems on AWS",
+  "ML&AI Unleashed: Exploring Potential & Impact",
+  "The State of Tech Communities In the Philippines",
   "Community to APN Partner Journey",
-  "Fusion of great people, innovative technology and a culture",
+  "Cloud #CanonEvent : Supercharge your career and business with AWS!",
+  "Embracing Chaos: Unleashing Resilience in Kubernetes through Engineering Practices",
+  "Ephemeral Labs for Training/Onboarding in AWS-EKS",
+  "Building Permit Management Made Possible with AWS: Unveiling BUILDPASS - Streamlining the Building Permit Process for Baguio City",
 ];
 
 var afternoonBigRoomItems = [
-  "LIGHTNING TALKS",
-  "BUILDHERS",
-  "CAREER SHIFT",
-  "Solving Clients' Toughest Challenges",
-  "Serverless + Generative AI: A Match Made in Heaven",
-  "AWS Certification",
+  "Building Bridges: Fostering Collaboration & Mentorship",
+  "Career Shifting to Tech: Discover effective strategies",
+  "Expanding Beyond the Company & Into the Community", 
+  "Site Reliability Engineering - How we do that with AWS?",
+  "Imbuing the Power of Generative AI into Your AWS Workloads",
+  "AI Productivity Tools in your Startup: a walkthrough and forward-looking view of AWS services in the AI/ML space",
   "Internet of Things in the Philippines",
 ];
 
 var morningSmallRoomItems = [
-  "INTRO TO AWS",
+  "Introduction to AWS",
   "AWS Control Tower and multiple account architecture",
   "Top 5 Cloud Security Risks in 2023: Insights and Recommendations",
   "AWS Security - Threat and Vulnerability Detection",
-  "ReForge Recap",
+  "AWS re:Inforce Recap",
   "Amazon VPC Lattice: Application Networking for Developers",
+  "Student Club Launch"
 ];
 
 var afternoonSmallRoomItems = [
-  "STUDENT CLUB LAUNCH",
-  "LIGHTNING TALKS",
   "Amazon EventBridge integrations with SaaS product events",
   "Developing End-to-End Serverless Applications",
   "Building Serverless Flutter Apps with AWS Amplify",
-  "Building a WordPress Site on AWS Using Composer and Terraform",
-  "AWS FOR QA TESTING",
+  "Quick Budget-Friendly WordPress Setup in AWS yet Scale Ready",
+  "AWS for QA Testing",
 ];
 
 function createListWithBulletPoints(items, targetElementId) {

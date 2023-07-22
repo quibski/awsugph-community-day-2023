@@ -4,15 +4,15 @@
       "speaker": "RAFI"
     },
     {
-      "agenda": "Making Data Center and Cloud Operation Teams Thrive",
-      "speaker": "LATINUM: OPSWERK"
+      "agenda": "Securing AI & ML Systems on AWS",
+      "speaker": "Arvs Lat"
     },
     {
-      "agenda": "AI / ML",
+      "agenda": "ML&AI Unleashed: Exploring Potential & Impact",
       "speaker": "ARVS, SANDY, RALPH, RAQUEL, MICHELLE, +1"
     },
     {
-      "agenda": "TECH COMMUNITIES",
+      "agenda": "The State of Tech Communities In the Philippines",
       "speaker": "BOB (Mozilla), BJ (Python), MARICA (DevCon), ANDRESITO (Pwa), CARL (Wordpress)"
     },
     {
@@ -20,23 +20,23 @@
       "speaker": ""
     },
     {
-      "agenda": "Containers on AWS",
-      "speaker": "GOLD: STRATPOINT —  ROMAR"
-    },
-    {
-      "agenda": "Building on a Budget the AWS Well-Architected way",
-      "speaker": "walmha@amazon.nl (Netherlands)"
-    },
-    {
-      "agenda": "Making Lives Better Through The Power Of Platform",
-      "speaker": "GOLD SPONSOR - FULCRUM"
-    },
-    {
       "agenda": "Community to APN Partner Journey",
-      "speaker": "DIWA"
+      "speaker": "Diwa Del Mundo / Apper"
     },
     {
-      "agenda": "Fusion of Great People, Innovative Technology and Culture",
-      "speaker": "PLATINUM: CLOUDSTAFF"
+      "agenda": "Cloud #CanonEvent : Supercharge your career and business with AWS!",
+      "speaker": "Jon Bonso"
+    },
+    {
+      "agenda": "Embracing Chaos: Unleashing Resilience in Kubernetes through Engineering Practices",
+      "speaker": "Romar Cablao / Stratpoint"
+    },
+    {
+      "agenda": "Ephemeral Labs for Training/Onboarding in AWS-EKS",
+      "speaker": "JON PETER PERDON / OpsWerks"
+    },
+    {
+      "agenda": "Building Permit Management Made Possible with AWS: Unveiling BUILDPASS - Streamlining the Building Permit Process for Baguio City",
+      "speaker": "Rustom S. Dayao, Joshua Bascos"
     }
   ]
