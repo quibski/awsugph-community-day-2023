@@ -7,7 +7,8 @@ var morningBigRoomItems = [
   "Cloud #CanonEvent : Supercharge your career and business with AWS!",
   "Embracing Chaos: Unleashing Resilience in Kubernetes through Engineering Practices",
   "Ephemeral Labs for Training/Onboarding in AWS-EKS",
-  "Building Permit Management Made Possible with AWS: Unveiling BUILDPASS - Streamlining the Building Permit Process for Baguio City",
+  "Award-winning Customer Service and Workplace culture",
+  "Automated to build continuously, deliver the business idea continuously"
 ];
 
 var afternoonBigRoomItems = [
@@ -27,6 +28,7 @@ var morningSmallRoomItems = [
   "AWS Security - Threat and Vulnerability Detection",
   "AWS re:Inforce Recap",
   "Amazon VPC Lattice: Application Networking for Developers",
+  "Building Permit Management Made Possible with AWS: Unveiling BUILDPASS - Streamlining the Building Permit Process for Baguio City",
   "Student Club Launch"
 ];
 
