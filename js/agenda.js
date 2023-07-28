@@ -36,7 +36,7 @@ var afternoonSmallRoomItems = [
   "Amazon EventBridge integrations with SaaS product events",
   "Developing End-to-End Serverless Applications",
   "Building Serverless Flutter Apps with AWS Amplify",
-  "Quick Budget-Friendly WordPress Setup in AWS yet Scale Ready",
+  "WordPress in AWS: Budget-Friendly & Ready to Scale",
   "AWS for QA Testing",
 ];
 
