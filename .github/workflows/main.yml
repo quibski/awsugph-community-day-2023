@@ -1,0 +1,40 @@
+name: Upload to S3
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Check if AWS CLI is installed
+      id: checkaws
+      run: |
+        if aws --version; then
+          echo "AWS CLI already installed"
+          echo "AWS_EXISTS=true" >> $GITHUB_ENV
+        else
+          echo "AWS CLI not installed"
+          echo "AWS_EXISTS=false" >> $GITHUB_ENV
+        fi
+
+    - name: Install AWS CLI
+      if: env.AWS_EXISTS == 'false'
+      run: |
+        curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        unzip awscliv2.zip
+        sudo ./aws/install
+        
+    - name: Upload new files to S3
+      run: |
+        aws s3 sync . s3://community.awsug.ph/2023/ --delete --exclude '.git/*' --exclude '.github/*'
+      env:
+        AWS_DEFAULT_REGION: 'ap-southeast-1'
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
