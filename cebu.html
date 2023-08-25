@@ -311,16 +311,19 @@
                         <div class="card tick_conf with_icon border" notclass="sold">
                             <h4 class="heading-ttl">PISO/FREE PASS (50 slots)</h4>
                             <div class="bg_img"></div>
-                            <p>General Conference: Gives you access to the conference
-                            </p><br />
+                            <p>General Conference: Gives you access to the conference</p><br />
                             <p>Sticker Pack, Raffle Entry, Snacks</p>
                             <small>*No Networking Events outside</small>
                             <small>*Slot Not Guaranteed</small>
                             <p></p>
                             <div class="buy-wrapper row flex-it">
                                 <div class="f1">
-                                    <a class="button large buy-ticket-link"
-                                        href="https://forms.zohopublic.com/awsugph/form/RegisterCommunityDayPhilippinesRoadshowCebu2023/formperma/hUysaAtxU0MXY70yX1rK9qye_yaf7OD_xGcyuIpYAE4?ticket_type=Piso%20Pass"> APPLY FOR PISO</a>
+                                    <!-- Changed href to javascript:void(0); and added inline styles for graying out the button -->
+                                    <a class="button large buy-ticket-link" 
+                                       href="javascript:void(0);" 
+                                       style="background-color: #ccc; color: #666; cursor: not-allowed; pointer-events: none;"> 
+                                       CLOSED
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +347,7 @@
                     </div>
 
                     <div class="col-md-12  col-sm-12">
-                        <div class="card tick_work_2 with_icon border" notclass="sold">
+                        <div class="card tick_work_2 with_icon border sold" notclass="sold">
                             <h4 class="heading-ttl">VIP PASS (40 slots) </h4>
                             <div class="bg_img"></div>
                             <p>General Conference & Networking Dinner, Lab Ticket Priority</p><br />
@@ -494,7 +497,14 @@
                                             <p>Morning</p>
                                         </div>
                                     </div>
-                                    <div class="td" colspan="3"> <div>Workshop</div></div>
+                                    <div class="td" colspan="3"> <div>Workshop:
+
+                                        <br />&bull; Introduction to Terraform on AWS
+                                        <br />&bull; Ransomware on S3 - Simulation and Detection
+
+
+
+                                    </div></div>
                                    
                                     
                                 </div>
@@ -507,11 +517,22 @@
                                     </div>
                                     <div class="td" colspan="3" >
                                         <div> <p>
-                                        State of Tech Communities <br /> 
-                                        Careers in AWS Skillsets <br /> 
-                                        ML/AI Application <br />
-                                        Security for Cloud <br />
-                                        ... <br />
+
+
+                                                                                        
+                                            Careers in AWS Skillsets<br />
+                                            State of Tech Communities Panel Discussion: Tech Community Experience<br />
+                                            How to Prepare for the Next Generation of Learning
+                                            Security Track: Well Architected Cloud<br />
+                                            Security Track: Awesome Cloud Security Tools<br />
+                                            Cloud Track: Deploying Serverless Applications with High Agility using AWS CDK<br />
+                                            Cloud Track: AWS Delivery Journey
+                                            AI Track: AI/ML Services in AWS<br />
+                                            AI Track: Supercharge traditional ML pipelines with AWS Machine Learning<br />
+                                            Securing AI & ML Systems on AWS<br />
+                                            Join the Community<br />
+
+                                     
                                         </p></div>
                                     </div>
                                     
